@@ -1,0 +1,16 @@
+modLoader = "javafml"
+loaderVersion = "[4,)"
+license = "MIT"
+
+[[mods]]
+modId = "manacomb_gametest"
+version = "0"
+displayName = "Manacomb GameTests (dev only)"
+description = '''GameTests for Manacomb. Loaded only by the gameTestServer run.'''
+
+[[dependencies.manacomb_gametest]]
+modId = "manacomb"
+type = "required"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
