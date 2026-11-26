@@ -3,13 +3,13 @@ loaderVersion = "[4,)"
 license = "MIT"
 
 [[mods]]
-modId = "manacomb_gametest"
+modId = "manaflux_gametest"
 version = "0"
-displayName = "Manacomb GameTests (dev only)"
-description = '''GameTests for Manacomb. Loaded only by the gameTestServer run.'''
+displayName = "Manaflux GameTests (dev only)"
+description = '''GameTests for Manaflux. Loaded only by the gameTestServer run.'''
 
-[[dependencies.manacomb_gametest]]
-modId = "manacomb"
+[[dependencies.manaflux_gametest]]
+modId = "manaflux"
 type = "required"
 versionRange = "*"
 ordering = "AFTER"

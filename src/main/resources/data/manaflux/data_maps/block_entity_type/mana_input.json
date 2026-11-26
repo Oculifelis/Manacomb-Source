@@ -1,0 +1,40 @@
+{
+  "values": {
+    "complicated_bees:centrifuge": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "complicated_bees"
+        }
+      ],
+      "fe_per_mana": 10.0
+    },
+    "complicated_bees:gyrofuge_controller": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "complicated_bees"
+        }
+      ],
+      "fe_per_mana": 10.0
+    },
+    "complicated_bees:gyrofuge_energy_cell": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "complicated_bees"
+        }
+      ],
+      "fe_per_mana": 10.0
+    },
+    "complicated_bees:mellarium_energy_cell": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "complicated_bees"
+        }
+      ],
+      "fe_per_mana": 10.0
+    }
+  }
+}

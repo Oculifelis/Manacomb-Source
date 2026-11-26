@@ -42,7 +42,7 @@ dependencies {
     compileOnly "mezz.jei:jei-${minecraft_version}-neoforge-api:${jei_version}"
 }
 
-// Dev-only GameTests: a second mod, manacomb_gametest, loaded only in the gameTestServer run. None of it ships.
+// Dev-only GameTests: a second mod, manaflux_gametest, loaded only in the gameTestServer run. None of it ships.
 sourceSets {
     gametest {
         compileClasspath += sourceSets.main.output
@@ -63,7 +63,7 @@ neoForge {
     runs {
         client {
             client()
-            gameDirectory = project.file('run')
+            gameDirectory = project.file('run/client')
         }
         server {
             server()
@@ -73,7 +73,7 @@ neoForge {
         gameTestServer {
             type = "gameTestServer"
             gameDirectory = project.file('run-gametest')
-            systemProperty 'neoforge.enabledGameTestNamespaces', 'manacomb_gametest'
+            systemProperty 'neoforge.enabledGameTestNamespaces', 'manaflux_gametest'
         }
         configureEach {
             logLevel = org.slf4j.event.Level.INFO
@@ -84,7 +84,7 @@ neoForge {
         "${mod_id}" {
             sourceSet(sourceSets.main)
         }
-        manacomb_gametest {
+        manaflux_gametest {
             sourceSet(sourceSets.gametest)
         }
     }
@@ -92,9 +92,9 @@ neoForge {
 neoForge.addModdingDependenciesTo(sourceSets.gametest)
 
 // The normal runs load only the shipped mod; the GameTest run adds the test mod.
-neoForge.runs.client.loadedMods = [neoForge.mods.manacomb]
-neoForge.runs.server.loadedMods = [neoForge.mods.manacomb]
-neoForge.runs.gameTestServer.loadedMods = [neoForge.mods.manacomb, neoForge.mods.manacomb_gametest]
+neoForge.runs.client.loadedMods = [neoForge.mods.manaflux]
+neoForge.runs.server.loadedMods = [neoForge.mods.manaflux]
+neoForge.runs.gameTestServer.loadedMods = [neoForge.mods.manaflux, neoForge.mods.manaflux_gametest]
 
 var generateModMetadata = tasks.register("generateModMetadata", ProcessResources) {
     var replaceProperties = [

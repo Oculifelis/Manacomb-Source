@@ -8,3 +8,6 @@ libs/
 out/
 build.log
 branding/
+
+run_porttest.log
+*.log

@@ -1,6 +1,0 @@
-{
-  "manacomb.jade.mana": "Runs on mana: 1 mana = %s FE",
-  "manacomb.jade.rf_refused": "Outside FE refused (Manacomb)",
-  "config.jade.plugin_manacomb.machine_power": "Manacomb machine power",
-  "manacomb.jei.mana": "This machine is a mana receiver. Aim a Mana Spreader at it, or put a Mana Spark on it to draw from pool sparks of the same colour. Mana is stored as FE (10 FE per mana by default)."
-}

@@ -1,0 +1,6 @@
+{
+  "manaflux.jade.mana": "Runs on mana: 1 mana = %s FE",
+  "manaflux.jade.rf_refused": "Outside FE refused (Manaflux)",
+  "config.jade.plugin_manaflux.machine_power": "Manaflux mana power",
+  "manaflux.jei.mana": "Takes Botania mana, like any block that takes FE. Aim a Mana Spreader at it, or put a Mana Spark on it to draw from pool sparks of the same colour. Mana is stored as FE (10 FE per mana by default)."
+}

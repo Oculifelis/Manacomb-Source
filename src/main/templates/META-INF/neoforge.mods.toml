@@ -1,13 +1,14 @@
 modLoader = "javafml"
 loaderVersion = "${loader_version_range}"
 license = "${mod_license}"
-issueTrackerURL = "https://github.com/Oculifelis/Manacomb/issues"
+issueTrackerURL="https://github.com/Oculifelis/Manacomb-Source/issues"
 
 [[mods]]
 modId = "${mod_id}"
 version = "${mod_version}"
 displayName = "${mod_name}"
-logoFile = "manacomb_logo.png"
+displayURL="https://www.curseforge.com/minecraft/mc-mods/manacomb"
+logoFile = "manaflux_logo.png"
 logoBlur = false
 authors = "${mod_authors}"
 description = '''${mod_description}'''
@@ -28,8 +29,8 @@ side = "BOTH"
 
 [[dependencies.${mod_id}]]
 modId = "complicated_bees"
-type = "required"
-reason = "the machines this addon powers (3.6+; its version string is 1.21.1-3.6.x, so no range)"
+type = "optional"
+reason = "the RF switch for its machines (3.6+; its version string is 1.21.1-3.6.x, so no range)"
 versionRange = "*"
 ordering = "AFTER"
 side = "BOTH"
@@ -37,7 +38,7 @@ side = "BOTH"
 [[dependencies.${mod_id}]]
 modId = "botania"
 type = "required"
-reason = "mana power: machines become mana receivers"
+reason = "mana power: FE blocks become mana receivers"
 versionRange = "*"
 ordering = "NONE"
 side = "BOTH"
